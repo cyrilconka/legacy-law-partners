@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Law Partners</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images\lecacy law partners logo 1.png" type="image/png">
+</head>
+<body>
+    <header class="hero">
+    <div class="overlay"></div>
+
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"><img src="images\lecacy law partners logo white 2.png" alt="Legacy Law Logo"></a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about-us">ABOUT US</a></li>
+        <li><a href="#practice-areas">OUR PRACTICE AREAS</a></li>
+        <li><a href="#why-choose-us">WHY CHOOSE US</a></li>
+        <li><a href="#contact-us">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-text">
+      <h1>Legacy Law Partners, LCC</h1>
+      <p>Legal Excellence in Diverse Practice Areas</p>
+
+      <div class="call-to-action">
+        <a href="#contact-us">CONTACT US</a>
+    </div>
+    </div>
+    
+  </header>
+
+
+<section class="about-us" id="about-us">
+  <div class="about-container">
+    <div class="about-image">
+      <!-- Replace with actual image -->
+      <img src="images\7e58f9ea0886adaa94b55926aede3a4f2a4921ec.jpg" alt="About Legacy Law Partners">
+    </div>
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        With a combined experience of over 25 years, Legacy Partners is a trusted legal firm committed to providing expert guidance across a broad spectrum of practice areas. <br><br>
+
+        Our team of dedicated attorneys brings deep industry knowledge and a client-centric approach to deliver tailored legal solutions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="practice-areas" id="practice-areas">
+    <div class="heading">
+      <h2>Our Practice Areas</h2>
+      <div class="underline"></div>
+    </div>
+  <div class="areas-grid">
+    <div class="area-item">
+      <span class="icon"><img src="images\practice areas\person_apron.png"></span>
+      <p>Labour Law</p>
+    </div>
+    <div class="area-item">
+      <span class="icon"><img src="images\practice areas\globe_location_pin.png"></span>
+      <p>Immigration</p>
+    </div>
+    <div class="area-item">
+      <span class="icon"><img src="images\practice areas\energy_program_saving.png"></span>
+      <p>Energy</p>
+    </div>
+    <div class="area-item">
+      <span class="icon"><img src="images\practice areas\account_balance.png"></span>
+      <p>Tax</p>
+    </div>
+    <div class="area-item">
+      <span class="icon"><img src="images\practice areas\anchor.png"></span>
+      <p>Maritime Law</p>
+    </div>
+    <div class="area-item">
+      <span class="icon"><img src="images\practice areas\gavel.png"></span>
+      <p>Corporate & Transactional Law</p>
+    </div>
+    <div class="area-item">
+      <span class="icon"><img src="images\practice areas\engineering.png"></span>
+      <p>Construction</p>
+    </div>
+    <div class="area-item">
+      <span class="icon"><img src="images\practice areas\forklift.png"></span>
+      <p>Mining</p>
+    </div>
+    <div class="area-item">
+      <span class="icon"><img src="images\practice areas\domain.png"></span>
+      <p>Property Law</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="why-choose-us" id="why-choose-us">
+  <div class="container">
+    <div class="heading">
+    <h2>Why Choose Us?</h2>
+    </div>
+    <div class="underline"></div>
+    <p>
+      At Legacy Partners, we pride ourselves on our professional integrity, strategic insight, and personalized service. Whether you're navigating complex legal challenges or seeking proactive advice, we are here to support your goals with experience and dedication.
+    </p>
+  </div>
+</section>
+
+<section class="contact-us" id="contact-us">
+  <div class="contact-content">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <div class="underline"></div>
+      <ul>
+        <li>
+          <span class="icon"><img src="images\icons\call.png"></span> +231 088 500 0005
+        </li>
+        <li>
+          <span class="icon"><img src="images\icons\language.png"></span>
+          <a href="http://www.legacylawpartners.org" target="_blank">www.legacylawpartners.org</a>
+        </li>
+        <li>
+          <span class="icon"><img src="images\icons\mail.png"></span>
+          Email: <a href="mailto:info@legacylawpartners.org">info@legacylawpartners.org</a>
+        </li>
+        <li>
+          <span class="icon"><img src="images\icons\distance.png"></span>
+          Address: 9th Street, Tubman Boulevard, Sinkor, Monrovia, Liberia,<br>Monrovia, Liberia
+        </li>
+      </ul>
+    </div>
+    <div class="contact-image">
+      <img src="images\0b2ccdafa38aae678dd4f94d0f8e024441d7b70f.jpg" alt="Business Professional with Coffee">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer>
+     <p>&copy; 2025 Legacy Partners, LLC All rights reserved</p>
+</footer>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navlinks = document.querySelector('.nav-links');
+    let menuOpen = false;
+
+    hamburger.addEventListener('click', () => {
+        if (menuOpen == false) {
+            navlinks.style.display = 'block';
+            menuOpen = true;
+        }
+
+        else if (menuOpen == true) {
+            navlinks.style.display = 'none';
+            menuOpen = false;
+        }
+    })
+
+    document.querySelector('.hamburger').addEventListener('click', function () {
+  this.classList.toggle('open');
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  font-family: poppins, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('images/d092eca22c3c2308b42d9e3f98e5a6f049c57c8c.jpg') no-repeat center center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 33, 71, 0.7); /* deep blue overlay */
+  z-index: 1;
+}
+
+/* Navbar */
+.navbar {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+ border-bottom: #D8AE76 2px solid;
+}
+
+
+
+
+
+
+/* hero section content */
+.hero-text {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-family: Merriweather, serif;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+.call-to-action {
+  display: inline-block;
+  background-color: #D8AE76;
+  color: white;
+  margin: 10px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.call-to-action a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.call-to-action:hover {
+    background-color: #98774c;
+}
+
+
+/* About Us Section */
+.about-us {
+  padding: 60px 40px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 550px;
+}
+
+.about-text h2 {
+  font-family: Merriweather, serif;
+  font-size: 2rem;
+  color: #042751;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #D8AE76;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Practice Areas Section */
+.practice-areas {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.practice-areas h2 {
+  font-family: Merriweather, serif;
+  font-size: 2rem;
+  color: #002147; 
+}
+
+.practice-areas .heading {
+    text-align: center;
+}
+
+.practice-areas .underline {
+  width: 70px;
+  height: 3px;
+  background-color: #D8AE76;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.areas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 80px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.area-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 250px; 
+}
+
+.area-item .icon {
+  font-size: 20px;
+  color: #d6a65d; 
+}
+
+.area-item p {
+  font-size: 1rem;
+  color: #222;
+  margin: 0;
+  text-align: left;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-choose-us .container {
+  max-width: 600px;
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.why-choose-us .container .heading {
+    text-align: center;
+}
+
+.why-choose-us h2 {
+  font-family: Merriweather, serif;
+  font-size: 1.8rem;
+  color: #0f2e5a; 
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.why-choose-us .underline {
+  width: 70px;
+  height: 3px;
+  background-color: #D8AE76;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+
+.why-choose-us p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* contact us */
+.contact-us {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.contact-us .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-us .contact-info {
+  flex: 1 1 500px;
+  padding: 20px;
+}
+
+.contact-us h2 {
+  font-family: Merriweather, serif;
+  font-size: 1.8rem;
+  color: #0f2e5a;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-us .underline {
+  width: 70px;
+  height: 3px;
+  background-color: #D8AE76;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.contact-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-us li {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.contact-us .icon {
+  margin-right: 10px;
+  font-size: 1.1rem;
+  color: #d39e00;
+}
+
+.contact-us a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.contact-us a:hover {
+  text-decoration: underline;
+}
+
+.contact-us .contact-image {
+  flex: 1 1 500px;
+  text-align: center;
+}
+
+.contact-us .contact-image img {
+  max-width: 100%;
+  height: 100%;
+}
+
+
+/* Footer */
+footer{
+    background-color: #042751;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  z-index: 1001;
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* When menu is open */
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+  .nav-links {
+    display: none;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    background-color: #D8AE76;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    margin-top: 20px;
+  }
+}
