@@ -43,6 +43,7 @@ body, html {
 
 .logo img {
   height: 40px;
+  margin-left: 100px;
 }
 
 .nav-links {
@@ -105,7 +106,7 @@ body, html {
 }
 
 .call-to-action:hover {
-    background-color: #98774c;
+    background-color: #666666;
 }
 
 
@@ -122,6 +123,7 @@ body, html {
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
+  margin-left: 70px;
 }
 
 
@@ -134,7 +136,6 @@ body, html {
 
 .about-text {
   max-width: 550px;
-  padding-right: 100px;
 }
 
 .about-us h2 {
@@ -169,7 +170,7 @@ body, html {
 .practice-areas h2 {
   font-family: 'Merriweather', serif;
   font-size: 2rem;
-  color: #002147; 
+  color: #0f2e5a; 
 }
 
 .practice-areas .heading {
@@ -268,7 +269,7 @@ body, html {
   flex-direction: column;
   justify-content: center;
   background: #ffffff;
-  margin-left: 150px;
+  margin-left: 90px;
 }
 
 .contact-us h1 {
@@ -407,8 +408,31 @@ footer{
     margin-top: 20px;
   }
 
-  .contact-us .contact-info {
-  flex: 1 1 500px;
-  padding: 10px;
+  .about-text {
+  max-width: 550px;
+  padding-right: 10px;
 }
+
+ .contact-info {
+  flex: 1;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  margin-left: 20px;
 }
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+ 
+
+
+
+
+
