@@ -6,14 +6,15 @@
 }
 body, html {
   height: 100%;
-  font-family: open-sans, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 /* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
-  background: url('images/hero image cropped.jpg') no-repeat center center/cover;
+  background: url('images/Hero x1.png') no-repeat center center/cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -26,7 +27,7 @@ body, html {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 34, 72, 0.9);
+  background-color: rgba(0, 34, 72, 0);
   z-index: 1;
 }
 
@@ -77,7 +78,7 @@ body, html {
 }
 
 .hero-text h1 {
-  font-family: Merriweather, serif;
+  font-family: 'Merriweather', serif;
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 10px;
@@ -137,7 +138,7 @@ body, html {
 }
 
 .about-us h2 {
-  font-family: Merriweather, serif;
+  font-family: 'Merriweather', serif;
   font-size: 1.8rem;
   color: #0f2e5a;
   font-weight: 700;
@@ -166,7 +167,7 @@ body, html {
 }
 
 .practice-areas h2 {
-  font-family: Merriweather, serif;
+  font-family: 'Merriweather', serif;
   font-size: 2rem;
   color: #002147; 
 }
@@ -204,9 +205,9 @@ body, html {
 }
 
 .area-item p {
-  font-family: merriweather, serif;
+  font-family: 'Merriweather', serif;
   font-size: 1rem;
-  font-weight: 550;
+  font-weight: 700;
   color: #222;
   margin: 0;
   text-align: left;
@@ -232,7 +233,7 @@ body, html {
 }
 
 .why-choose-us h2 {
-  font-family: Merriweather, serif;
+  font-family: 'Merriweather', serif;
   font-size: 1.8rem;
   color: #0f2e5a; 
   font-weight: 700;
@@ -271,7 +272,7 @@ body, html {
 }
 
 .contact-us h1 {
-  font-family: Merriweather, serif;
+  font-family: 'Merriweather', serif;
   font-size: 1.8rem;
   color: #0f2e5a;
   font-weight: 700;
