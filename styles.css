@@ -6,14 +6,14 @@
 }
 body, html {
   height: 100%;
-  font-family: poppins, sans-serif;
+  font-family: open-sans, sans-serif;
 }
 
 /* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
-  background: url('images/d092eca22c3c2308b42d9e3f98e5a6f049c57c8c.jpg') no-repeat center center/cover;
+  background: url('images/hero image cropped.jpg') no-repeat center center/cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@ body, html {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 33, 71, 0.7); /* deep blue overlay */
+  background-color: rgba(0, 34, 72, 0.9);
   z-index: 1;
 }
 
@@ -55,6 +55,7 @@ body, html {
   color: white;
   font-weight: 500;
   transition: color 0.3s ease;
+  font-weight: 500;
 }
 
 .nav-links a:hover {
@@ -77,7 +78,7 @@ body, html {
 
 .hero-text h1 {
   font-family: Merriweather, serif;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -90,8 +91,8 @@ body, html {
   display: inline-block;
   background-color: #D8AE76;
   color: white;
-  margin: 10px;
-  padding: 8px 15px;
+  margin: 20px;
+  padding: 8px 25px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -122,6 +123,7 @@ body, html {
   flex-wrap: wrap;
 }
 
+
 .about-image img {
   width: 100%;
   max-width: 500px;
@@ -131,16 +133,23 @@ body, html {
 
 .about-text {
   max-width: 550px;
+  padding-right: 100px;
 }
 
-.about-text h2 {
+.about-us h2 {
   font-family: Merriweather, serif;
-  font-size: 2rem;
-  color: #042751;
-  margin-bottom: 15px;
-  border-bottom: 3px solid #D8AE76;
-  display: inline-block;
-  padding-bottom: 5px;
+  font-size: 1.8rem;
+  color: #0f2e5a;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-us .underline {
+  width: 70px;
+  height: 3px;
+  background-color: #D8AE76;
+  margin-bottom: 20px;
+  border-radius: 2px;
 }
 
 .about-text p {
@@ -195,7 +204,9 @@ body, html {
 }
 
 .area-item p {
+  font-family: merriweather, serif;
   font-size: 1rem;
+  font-weight: 550;
   color: #222;
   margin: 0;
   text-align: left;
@@ -245,25 +256,21 @@ body, html {
 
 /* contact us */
 .contact-us {
-  background-color: #ffffff;
-  padding: 60px 20px;
-}
-
-.contact-us .contact-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.contact-us .contact-info {
-  flex: 1 1 500px;
-  padding: 20px;
+.contact-info {
+  flex: 1;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  margin-left: 150px;
 }
 
-.contact-us h2 {
+.contact-us h1 {
   font-family: Merriweather, serif;
   font-size: 1.8rem;
   color: #0f2e5a;
@@ -279,44 +286,42 @@ body, html {
   border-radius: 2px;
 }
 
-.contact-us ul {
+.contact-info ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-.contact-us li {
-  margin-bottom: 15px;
-  font-size: 0.95rem;
-  color: #333333;
+.contact-info li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
   line-height: 1.5;
 }
 
-.contact-us .icon {
-  margin-right: 10px;
-  font-size: 1.1rem;
-  color: #d39e00;
+.contact-info .icon {
+  color: #c58940;
+  margin-right: 12px;
+  font-size: 18px;
+  flex-shrink: 0;
+  line-height: 1.4;
 }
 
-.contact-us a {
-  color: #333333;
-  text-decoration: none;
+.contact-info a {
+  color: #222;
+  text-decoration: underline;
+  
 }
 
-.contact-us a:hover {
+.contact-info a:hover {
   text-decoration: underline;
 }
 
-.contact-us .contact-image {
-  flex: 1 1 500px;
-  text-align: center;
-}
-
-.contact-us .contact-image img {
-  max-width: 100%;
-  height: 100%;
+.contact-image {
+  flex: 1;
+  background-image: url("images/0b2ccdafa38aae678dd4f94d0f8e024441d7b70f.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -400,4 +405,9 @@ footer{
   .about-text h2 {
     margin-top: 20px;
   }
+
+  .contact-us .contact-info {
+  flex: 1 1 500px;
+  padding: 10px;
+}
 }
