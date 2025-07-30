@@ -380,6 +380,10 @@ footer{
     border-radius: 5px;
   }
 
+  .nav-links .a {
+    margin: 15px 0;
+  }
+
   .hero-text h1 {
     font-size: 2rem;
   }
