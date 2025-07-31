@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Law Partners</title>
+    <title>Legacy Law Partners</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images\lecacy law partners logo 1.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +15,9 @@
 </head>
 <body>
     <header class="hero">
+    
     <div class="overlay"></div>
-
+<div class="container">
     <nav class="navbar">
       <div class="logo">
         <a href="#"><img src="images\lecacy law partners logo white 2.png" alt="Legacy Law Logo"></a>
@@ -36,7 +37,7 @@
         <li><a href="#contact-us">CONTACT US</a></li>
       </ul>
     </nav>
-
+</div>
     <div class="hero-text">
       <h1>Legacy Law Partners, LCC</h1>
       <p>Legal Excellence in Diverse Practice Areas</p>
@@ -44,12 +45,13 @@
       <div class="call-to-action">
         <a href="#contact-us">CONTACT US</a>
     </div>
-    </div>
     
+  </div> 
   </header>
 
 
 <section class="about-us" id="about-us">
+  <div class="container">
   <div class="about-container">
     <div class="about-image">
       <img src="images\7e58f9ea0886adaa94b55926aede3a4f2a4921ec.jpg" alt="About Legacy Law Partners">
@@ -65,10 +67,12 @@
       </p>
     </div>
   </div>
+  </div>
 </section>
 
 <section class="practice-areas" id="practice-areas">
-    <div class="heading">
+  <div class="container"> 
+  <div class="heading">
       <h2>Our Practice Areas</h2>
       <div class="underline"></div>
     </div>
@@ -110,6 +114,7 @@
       <p>Property Law</p>
     </div>
   </div>
+  </div> 
 </section>
 
 
@@ -126,39 +131,43 @@
 </section>
 
 <section class="contact-us" id="contact-us">
-  <div class="contact-info">
-    <h1>Contact Us</h1>
+  <div class="contact-wrapper">
+    <div class="contact-left">
+      <h2>Contact Us</h2>
       <div class="underline"></div>
-    <ul>
+      <ul>
         <li>
-          <span class="icon"><img src="images\icons\call.png"></span> +231 088 500 0005
+          <span class="icon"><img src="images/icons/call.png" alt="Phone Icon"></span>
+          <div class="info">+231 088 500 0005</div>
         </li>
         <li>
-          <span class="icon"><img src="images\icons\language.png"></span>
-          <a href="http://www.legacylawpartners.org" target="_blank">www.legacylawpartners.org</a>
+          <span class="icon"><img src="images/icons/language.png" alt="Website Icon"></span>
+          <div class="info"><a href="http://www.legacylawpartners.org" target="_blank">www.legacylawpartners.org</a></div>
         </li>
         <li>
-          <span class="icon"><img src="images\icons\mail.png"></span>
-          Email: <a href="mailto:info@legacylawpartners.org">info@legacylawpartners.org</a>
+          <span class="icon"><img src="images/icons/mail.png" alt="Mail Icon"></span>
+          <div class="info"><a href="mailto:info@legacylawpartners.org">info@legacylawpartners.org</a></div>
         </li>
         <li>
-          <span class="icon"><img src="images\icons\distance.png"></span>
-          Address: 9th street, Sinkor, Tubman Boulevard,<br>Monrovia, Liberia
+          <span class="icon"><img src="images/icons/distance.png" alt="Location Icon"></span>
+          <div class="info">9th Street, Sinkor, Tubman Boulevard,<br>Monrovia, Liberia</div>
         </li>
       </ul>
+    </div>
+
+    <div class="contact-right">
+      <img src="images/0b2ccdafa38aae678dd4f94d0f8e024441d7b70f.jpg" alt="Contact Us Image">
+    </div>
   </div>
-  <div class="contact-image"></div>
 </section>
-
-
-
-
 
 
 
 <footer>
      <p>&copy; 2025 Legacy Partners, LLC All rights reserved</p>
 </footer>
+
+
 
 <script>
     const hamburger = document.querySelector('.hamburger');
