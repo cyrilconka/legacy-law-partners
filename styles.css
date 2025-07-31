@@ -12,7 +12,7 @@ body, html {
 
 /* Hero Section */
 .container {
-  max-width: 1400px;
+  max-width: 1096px;
   width: 100%;
   margin: 0 auto;
 }
@@ -141,7 +141,7 @@ body, html {
 }
 
 .about-text {
-  max-width: 550px;
+  max-width: 500px;
 }
 
 .about-us h2 {
