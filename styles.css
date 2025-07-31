@@ -11,10 +11,17 @@ body, html {
 }
 
 /* Hero Section */
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
 .hero {
   position: relative;
   height: 100vh;
-  background: url('images/Hero x1.png') no-repeat center center/cover;
+  background: url('images/background-pattern.png') no-repeat center center/cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -27,7 +34,7 @@ body, html {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 34, 72, 0);
+  background-color: rgba(0, 33, 71, 0.5); /* deep blue overlay */
   z-index: 1;
 }
 
@@ -38,12 +45,11 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 60px;
+  padding: 25px 20px;
 }
 
 .logo img {
   height: 40px;
-  margin-left: 100px;
 }
 
 .nav-links {
@@ -112,18 +118,18 @@ body, html {
 
 /* About Us Section */
 .about-us {
-  padding: 60px 40px;
+  padding: 60px 0;
 }
 
 .about-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  padding: 0 20px;
   gap: 40px;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
-  margin-left: 70px;
 }
 
 
@@ -162,7 +168,7 @@ body, html {
 
 /* Practice Areas Section */
 .practice-areas {
-  padding: 60px 40px;
+  padding: 60px 0;
   text-align: center;
   background-color: #fff;
 }
@@ -188,9 +194,11 @@ body, html {
 .areas-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 80px;
-  justify-content: center;
+  gap: 40px 150px;
+  justify-content: start;
+  padding: 0 20px;
   margin-top: 30px;
+  width: 100%;
 }
 
 .area-item {
@@ -221,12 +229,12 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .why-choose-us .container {
   max-width: 600px;
   text-align: center;
-  padding: 40px 30px;
 }
 
 .why-choose-us .container .heading {
@@ -257,74 +265,94 @@ body, html {
 }
 
 /* contact us */
-.contact-us {
+
+
+.contact-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  background: white;
 }
 
-.contact-info {
+.contact-left {
   flex: 1;
-  padding: 80px 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #ffffff;
-  margin-left: 90px;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  color: #333;
 }
 
-.contact-us h1 {
+.contact-left h2 {
   font-family: 'Merriweather', serif;
-  font-size: 1.8rem;
-  color: #0f2e5a;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 10px;
+  color: #0f2e5a;
 }
 
-.contact-us .underline {
+.contact-left .underline {
   width: 70px;
   height: 3px;
   background-color: #D8AE76;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-radius: 2px;
 }
 
-.contact-info ul {
+.contact-left ul {
   list-style: none;
+  padding: 0;
 }
 
-.contact-info li {
+.contact-left li {
   display: flex;
   align-items: flex-start;
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 20px;
-  line-height: 1.5;
+  margin-bottom: 25px;
 }
 
-.contact-info .icon {
-  color: #c58940;
-  margin-right: 12px;
-  font-size: 18px;
+.contact-left .icon img {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
   flex-shrink: 0;
-  line-height: 1.4;
 }
 
-.contact-info a {
+.contact-left .info {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-left a {
   color: #222;
   text-decoration: underline;
-  
 }
 
-.contact-info a:hover {
-  text-decoration: underline;
-}
 
-.contact-image {
+.contact-right {
   flex: 1;
-  background-image: url("images/0b2ccdafa38aae678dd4f94d0f8e024441d7b70f.jpg");
-  background-size: cover;
-  background-position: center;
+  max-height: 100%;
 }
+
+.contact-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+  }
+
+  .contact-left {
+    padding: 30px 20px;
+  }
+}
+
 
 
 /* Footer */
@@ -381,14 +409,22 @@ footer{
   .nav-links {
     display: none;
     flex-basis: 100%;
-    flex-wrap: wrap;
-    background-color: #D8AE76;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: #042751;
+    padding: 100px;
+    text-align: center;
+    height: 420px;
+
   }
 
-  .nav-links .a {
-    margin: 15px 0;
+  .nav-links .ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links .ul li {
+    margin: 50px 0;
   }
 
   .hero-text h1 {
@@ -406,11 +442,13 @@ footer{
 
   .about-text h2 {
     margin-top: 20px;
+    text-align: left;
   }
 
   .about-text {
   max-width: 550px;
   padding-right: 10px;
+  text-align: left;
 }
 
  .contact-info {
