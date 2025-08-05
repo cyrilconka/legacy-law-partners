@@ -266,6 +266,73 @@ body, html {
   color: #333333;
 }
 
+
+/* manager profile section */
+.meet-md {
+  width: 100%;
+  margin: 60px 20px;
+}
+
+.meet-md h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0f2e5a;
+}
+
+.meet-md .underline {
+  width: 70px;
+  height: 3px;
+  background-color: #D8AE76;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.md-profile {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Image float for wrap effect */
+.md-profile img {
+  float: left;
+  width: 103px;
+  height: 146px;
+  border-radius: 4px;
+  margin: 0 20px 10px 0;
+}
+
+.md-profile h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.md-profile p {
+  margin: 15px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .md-profile img {
+  float: left;
+  width: 103px;
+  height: 146px;
+  border-radius: 4px;
+  margin: 0 20px 10px 0;
+  }
+
+  .md-profile {
+    text-align: center;
+  }
+
+  .md-profile p,
+  .md-profile h3 {
+    text-align: left;
+  }
+}
+
+
 /* contact us */
 
 
@@ -328,6 +395,9 @@ body, html {
   text-decoration: underline;
 }
 
+.contact-left a:hover {
+  color: #D8AE76;
+}
 
 .contact-right {
   flex: 1;
@@ -409,25 +479,38 @@ footer{
 }
 
   .nav-links {
-    display: none;
-    flex-basis: 100%;
-    background-color: #042751;
-    padding: 100px;
-    text-align: center;
-    height: 420px;
+  display: none; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #042751;
+  padding: 60px 20px;
+  height: 100vh; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
-  }
 
-  .nav-links .ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+.nav-links li {
+  text-align: center;
+  list-style: none;
+  margin: 25px 0;
+}
 
-  .nav-links .ul li {
-    margin: 50px 0;
-  }
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #d6d466; /* Optional hover color */
+}
+
 
   .hero-text h1 {
     font-size: 2rem;
